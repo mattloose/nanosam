@@ -17,7 +17,7 @@ class FileExist(argparse.Action):
 
 def get_parser():
     parser = argparse.ArgumentParser(
-        description="""A simple tool to dump nanopore fast5s into a BAM type structure - a work in progress.\n Example command with supplied files:\n python nanosam_encode.py allreads.fastq allreads.sam test.bam\n This assumes the presence of fast5 files in the folder testpass. Command must be run from this folder. Running this command should generate a bam file equivalent to the ref.bam provided. """,
+        description="""A simple tool to dump nanopore fast5s into a BAM type structure - a work in progress.\n Example command with supplied files:\n python nanosam_encode.py allreads.fastq allreads.sam test.bam\r\n This assumes the presence of fast5 files in the folder testpass. Command must be run from this folder. Running this command should generate a bam file equivalent to the ref.bam provided. """,
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
     parser.add_argument("inputfastq", action=FileExist,
